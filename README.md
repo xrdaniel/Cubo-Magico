@@ -1,10 +1,7 @@
-# Cubo de Rubik em JavaScript Puro
+# Cubo Mágico em JavaScript Puro
 
 ![Cubo de Rubik](./.github/cubo.png)
 
-## Visualização do Projeto
-
-Você pode visualizar o projeto [clicando aqui](https://cube-de-rubik.vercel.app/).
 
 ## Descrição
 
@@ -16,10 +13,6 @@ O Cubo de Rubik é um quebra-cabeça tridimensional muito popular. Este projeto 
 - Movimentos personalizados do cubo.
 - Solucionador automático que utiliza o [Método de Fridrich](https://cubesolve.com/como-resolver-o-cubo-magico-pt/amp/).
 - Visualização dos passos para a resolução do cubo.
-
-## Pré-requisitos
-
-- Navegador da web (Google Chrome, Mozilla Firefox, etc.).
 
 ## Como Usar
 
@@ -49,12 +42,6 @@ Se desejar contribuir para este projeto, fique à vontade para criar pull reques
 
 ## Autor
 
-<a href="https://github.com/valdir-alves3000/">
- <img style="border-radius: 50%; margin-bottom: 10px" src="https://github.com/valdir-alves3000.png" width="100px;" alt=""/>
- <br />
- <sub style="margin-right: 1rem;"><b>Valdir Alves </b></sub>🚀</a>
-
-<p style="margin-top: 0.5rem;">Feito com ❤️ por Valdir Alves. Entre em contato!</p>
-
-[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/valdiralves3000/)](http://linkedin.com/in/valdiralves3000)
-[![Gmail Badge](https://img.shields.io/badge/-Gmail-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:valdiralves3000@gmail.com)](mailto:valdiralves3000@gmail.com)
+Daniel Rodrigues
+- Linkedin: https://www.linkedin.com/in/lucasdallavalle/](https://www.linkedin.com/in/xrdaniel
+-  GitHub: [https://github.com/xrdaniel]
