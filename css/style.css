@@ -1,0 +1,165 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle, white, rgba(0, 0, 0, 0.5));
+  background-color: #2f2f31;
+  background-blend-mode: overlay;
+}
+
+#title {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  font-size: 48px;
+  text-align: center;
+  background: linear-gradient(90deg,white, rgb(76, 131, 76), rgb(203, 198, 53));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.centered, .cube > .piece > .element > .sticker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.scene {
+  width: 100%;
+  height: 100%;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.scene > .pivot {
+  width: 0;
+  height: 0;
+  transition: 0.18s;
+}
+
+.scene div {
+  position: absolute;
+  transform-style: inherit;
+}
+
+.cube {
+  font-size: 190%;
+  margin-left: -1em;
+  margin-top: -1em;
+}
+.cube > .piece {
+  width: 1.9em;
+  height: 1.9em;
+}
+.cube > .piece > .element {
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  outline: 1px solid transparent;
+  border: 0.05em solid #0a0a0a;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.cube > .piece > .element.left {
+  transform: rotateX(0deg) rotateY(-90deg) rotateZ(180deg) translateZ(1em);
+}
+.cube > .piece > .element.right {
+  transform: rotateX(0deg) rotateY(90deg) rotateZ(90deg) translateZ(1em);
+}
+.cube > .piece > .element.back {
+  transform: rotateX(0deg) rotateY(180deg) rotateZ(-90deg) translateZ(1em);
+}
+.cube > .piece > .element.front {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateZ(1em);
+}
+.cube > .piece > .element.bottom {
+  transform: rotateX(-90deg) rotateY(0deg) rotateZ(-90deg) translateZ(1em);
+}
+.cube > .piece > .element.top {
+  transform: rotateX(90deg) rotateY(0deg) rotateZ(180deg) translateZ(1em);
+}
+.cube > .piece > .element > .sticker {
+  transform: translateZ(2px);
+  width: 95%;
+  height: 95%;
+  border-radius: 10%;
+  outline: 1px solid transparent;
+  box-shadow: inset 0.05em 0.05em 0.2rem 0 rgba(255, 255, 255, 0.25), inset -0.05em -0.05em 0.2rem 0 rgba(0, 0, 0, 0.25);
+}
+.cube > .piece > .element > .sticker.blue {
+  background-color: #001ca8;
+}
+.cube > .piece > .element > .sticker.green {
+  background-color: #006e16;
+}
+.cube > .piece > .element > .sticker.white {
+  background-color: #ddd;
+}
+.cube > .piece > .element > .sticker.yellow {
+  background-color: #e0ae00;
+}
+.cube > .piece > .element > .sticker.orange {
+  background-color: #ff5000;
+}
+.cube > .piece > .element > .sticker.red {
+  background-color: #df0500;
+}
+
+.scene .anchor {
+  width: 2em;
+  height: 6em;
+}
+
+.scene .anchor:first-child{
+  transform: translateZ(3px) translateY(-33.33%) rotate(0deg) translateY(66.67%);
+}
+
+.scene .anchor:nth-child(2){
+  transform: translateZ(3px) translateY(-33.33%) rotate(-90deg) translateY(66.67%);
+}
+
+.scene .anchor:nth-child(3){
+  transform: translateZ(3px) translateY(-33.33%) rotate(-180deg) translateY(66.67%);
+}
+
+.scene .anchor:last-child{
+  transform: translateZ(3px) translateY(-33.33%) rotate(-270deg) translateY(66.67%);
+}
+
+.actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  z-index: 99;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #25252e;
+  color: #dddddda0;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  margin-left: 1rem;
+}
+
+.actions button:hover {  
+  background-color: #202026;
+  color: #dddddd;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
